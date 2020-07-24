@@ -1,7 +1,7 @@
+import Construction from '../components/Construction';
+
 const Index = () => {
-  return (
-    <h1>Hello World</h1>
-  );
-}
+  return <Construction />;
+};
 
 export default Index;

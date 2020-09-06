@@ -1,7 +1,27 @@
-import Construction from '../components/Construction';
+import Head from 'next/head';
+import Home from '../components/Home';
 
 const Index = () => {
-  return <Construction />;
+  return (
+    <>
+      <Head>
+        <title>IdeaSyed | Dev</title>
+        <link
+          href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300"
+          rel="stylesheet"
+        />
+        <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+      </Head>
+      <Home />
+    </>
+  );
 };
 
 export default Index;
